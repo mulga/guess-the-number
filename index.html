@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/6b7d429c30.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title-container">
+        <h1 class="title" id="title">Welcome</h1>
+        <h2 class="subtitle" id="subtitle">Guess the number</h2>
+      </div>
+      <div class="input-guess grid">
+        <label for="guess">Your Number</label>
+        <input type="text" placeholder="Your Number" id="guess" />
+        <button class="btn btn-primary" id="send-number" onclick="startGame()">
+          Guess Number</button
+        ><button
+          class="btn btn-primary"
+          id="send-number"
+          onclick="location.reload(true)"
+        >
+          Start new game
+        </button>
+      </div>
+      <div class="browsor-message">
+        <p id="message1">Versuche:0</p>
+        <p id="message2">Used Number:[none]</p>
+        <p id="message3"></p>
+      </div>
+    </div>
+
+    <!-- Js -->
+    <script src="script.js"></script>
+  </body>
+</html>
